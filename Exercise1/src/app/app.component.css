@@ -1,0 +1,9 @@
+/* src/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Arial|Times+New+Roman&display=swap');
+/* src/app/text-styler/text-styler.component.css */
+p {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+  }
+

@@ -1,0 +1,40 @@
+<div>
+  <label for="nameInput">Enter your name: </label>
+  <input type="text" id="nameInput" [(ngModel)]="userName" />
+</div>
+
+<div>
+  <label for="fontSelect">Choose font: </label>
+  <select id="fontSelect" [(ngModel)]="selectedFont">
+    <option value="Arial">Arial</option>
+    <option value="Times New Roman">Times New Roman</option>
+  </select>
+</div>
+
+<div>
+  <label for="sizeInput">Choose size: </label>
+  <input type="number" id="sizeInput" [(ngModel)]="fontSize" />
+</div>
+
+<div>
+  <label>Choose alignment: </label>
+  <div>
+    <input type="checkbox" id="leftAlign" [(ngModel)]="alignLeft" />
+    <label for="leftAlign">Left</label>
+  </div>
+  <div>
+    <input type="checkbox" id="centerAlign" [(ngModel)]="alignCenter" />
+    <label for="centerAlign">Center</label>
+  </div>
+  <div>
+    <input type="checkbox" id="rightAlign" [(ngModel)]="alignRight"  />
+    <label for="rightAlign">Right</label>
+  </div>
+</div>
+<div>
+  <p [style.font-family]="selectedFont" [style.font-size.px]="fontSize" [style.text-align]="textAlignment">
+    Hello {{ userName }}!
+  </p>
+</div>
+
+<!-- router-outlet></router-outlet -->
